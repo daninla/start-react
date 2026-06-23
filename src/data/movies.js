@@ -1,6 +1,11 @@
+import harryPotterImg from '../assets/images.jpeg';
+import forsazh2Img from '../assets/forsazh.jpg';
+import batmanImg from '../assets/batman.jpg';
+
 export const moviesData = [
   {
     title: 'Гаррі Поттер і філософський камінь',
+    img: harryPotterImg,
     generalInfo: {
       year: 2001,
       country: 'Велика Британія, США',
@@ -19,6 +24,7 @@ export const moviesData = [
   },
   {
     title: 'Форсаж 2',
+    img: forsazh2Img,
     generalInfo: {
       year: 2003,
       country: 'США, Німеччина',
@@ -37,6 +43,7 @@ export const moviesData = [
   },
   {
     title: 'Темний лицар',
+    img: batmanImg,
     generalInfo: {
       year: 2008,
       country: 'США, Велика Британія',

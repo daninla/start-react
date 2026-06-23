@@ -8,8 +8,8 @@ export class Main extends Component {
     return (
       <main className={styles.main}>
         <div className={styles.container}>
-          <h1 className={styles.title}>{movie.title}</h1>
-          
+          <img src={movie.img} alt='picture'></img>
+          <h1 className={styles.title}>{movie.title}</h1>     
           <div className={styles.infoBlock}>
             <p><strong>Рік випуску:</strong> {movie.generalInfo.year}</p>
             <p><strong>Країна:</strong> {movie.generalInfo.country}</p>
