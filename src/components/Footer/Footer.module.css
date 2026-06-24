@@ -1,0 +1,35 @@
+.footer {
+  background-color: rgb(32, 32, 32);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.footerContent {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 24px;
+  }
+
+  .footerContent {
+    width: 85%;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    padding: 30px;
+  }
+
+  .footerContent {
+    width: 60%;
+  }
+}

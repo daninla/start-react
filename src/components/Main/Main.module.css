@@ -1,4 +1,183 @@
-img{
+.main {
+  min-height: 100vh;
+  background-color: #160038;
+}
+
+.container {
+  max-width: 95%;
+  margin: -15px auto;
+  padding: 32px 24px;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 0 40px;
+  background-color: rgb(51, 48, 63);
+  min-height: 100vh;
+  color: #ffe3e3;
+  align-items: start;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  word-break: break-word;
+  white-space: normal;
+}
+
+.blockTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.blockTitle > img {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.sectionBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoBlock {
+  margin-bottom: 20px;
+}
+
+.infoBlock p {
+  margin: 6px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.infoBlock strong {
+  font-weight: 700;
+}
+
+.plotBlock {
+  margin-bottom: 20px;
+}
+
+.plotBlock h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+.plotBlock p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  word-break: break-word;
+}
+
+.actorsBlock h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+.actorsBlock ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.actorsBlock ul li {
+  font-size: 14px;
+  line-height: 1.8;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-top: 80px;
+  }
+
+  .container {
+    max-width: 90%;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: start;
+  }
+
+  .blockTitle {
+    align-items: flex-start;
+  }
+
+  .blockTitle > img {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .title {
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .infoBlock p {
+    font-size: 13px;
+  }
+
+  .plotBlock h3,
+  .actorsBlock h3 {
+    font-size: 15px;
+  }
+
+  .plotBlock p {
+    font-size: 13px;
+  }
+
+  .actorsBlock ul li {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+    padding-top: 85px;
+  }
+
+  .container {
+    max-width: 60%;
+    padding: 30px 16px;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 30px;
+  }
+
+  .blockTitle > img {
     width: 300px;
-    height: 500px;
+    height: 400px;
+    max-width: 100%;
+    aspect-ratio: auto;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .infoBlock p {
+    font-size: 14px;
+    margin: 4px 0;
+  }
+
+  .plotBlock h3,
+  .actorsBlock h3 {
+    font-size: 16px;
+  }
+
+  .plotBlock p {
+    font-size: 14px;
+    max-width: 400px;
+  }
+
+  .actorsBlock ul li {
+    font-size: 14px;
+  }
 }

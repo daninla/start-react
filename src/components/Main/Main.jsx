@@ -8,28 +8,42 @@ export class Main extends Component {
     return (
       <main className={styles.main}>
         <div className={styles.container}>
-          <img src={movie.img} alt='picture'></img>
-          <h1 className={styles.title}>{movie.title}</h1>     
-          <div className={styles.infoBlock}>
-            <p><strong>Рік випуску:</strong> {movie.generalInfo.year}</p>
-            <p><strong>Країна:</strong> {movie.generalInfo.country}</p>
-            <p><strong>Студія:</strong> {movie.generalInfo.studio}</p>
-            <p><strong>Жанр:</strong> {movie.generalInfo.genre.join(', ')}</p>
-            <p><strong>Режисер:</strong> {movie.director}</p>
+          <div className={styles.blockTitle}>
+            <h1 className={styles.title}>{movie.title}</h1>
+            <img src={movie.img} alt="picture"></img>
           </div>
+          <div className={styles.sectionBlock}>
+            <div className={styles.infoBlock}>
+              <p>
+                <strong>Рік випуску:</strong> {movie.generalInfo.year}
+              </p>
+              <p>
+                <strong>Країна:</strong> {movie.generalInfo.country}
+              </p>
+              <p>
+                <strong>Студія:</strong> {movie.generalInfo.studio}
+              </p>
+              <p>
+                <strong>Жанр:</strong> {movie.generalInfo.genre.join(', ')}
+              </p>
+              <p>
+                <strong>Режисер:</strong> {movie.director}
+              </p>
+            </div>
 
-          <div className={styles.plotBlock}>
-            <h3>Сюжет:</h3>
-            <p>{movie.plot}</p>
-          </div>
+            <div className={styles.plotBlock}>
+              <h3>Сюжет:</h3>
+              <p>{movie.plot}</p>
+            </div>
 
-          <div className={styles.actorsBlock}>
-            <h3>У головних ролях:</h3>
-            <ul>
-              {movie.actors.map((actor) => (
-                <li key={actor}>{actor}</li>
-              ))}
-            </ul>
+            <div className={styles.actorsBlock}>
+              <h3>У головних ролях:</h3>
+              <ul>
+                {movie.actors.map((actor) => (
+                  <li key={actor}>{actor}</li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </main>

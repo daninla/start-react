@@ -1,30 +1,41 @@
 header {
-  margin: 0 auto;
-  background-color: rgb(109, 72, 17);
-  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgb(10, 0, 22);
   padding: 10px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 .container {
-  width: 70%;
+  width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
-  height: 100%;
   display: flex;
-  gap: 50px;
+  gap: 10px;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 50px;
 }
 .films {
   display: flex;
   color: #fff;
-  justify-content: space-between;
-  gap: 200px;
+  justify-content: flex-start;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 .films > li {
   background-color: rgba(255, 255, 255, 0.15);
   color: #fff;
-  padding: 5px;
+  padding: 6px 12px;
   cursor: pointer;
   border-radius: 10px;
   transition: 0.2s ease;
+  white-space: nowrap;
+  font-size: 14px;
 }
 .films > li:hover {
   background-color: rgba(255, 255, 255, 0.25);
@@ -33,4 +44,36 @@ header {
   margin: 0;
   font-size: 24px;
   color: #fff;
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 85%;
+    gap: 20px;
+  }
+  .films {
+    gap: 15px;
+  }
+  .films > li {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+  .logo {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 60%;
+    gap: 50px;
+  }
+  .films {
+    gap: 30px;
+  }
+  .films > li {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
 }
