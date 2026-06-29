@@ -1,6 +1,6 @@
-import harryPotterImg from '../assets/images.jpeg';
-import forsazh2Img from '../assets/forsazh.jpg';
-import batmanImg from '../assets/batman.jpg';
+import harryPotterImg from '../../public/images.jpeg';
+import forsazh2Img from '../../public/forsazh.jpg';
+import batmanImg from '../../public/batman.jpg';
 
 export const moviesData = [
   {
